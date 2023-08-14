@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariyana Middle Eastern Food</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+                
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('w.svg');
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: 400px;
+            opacity: 0.8;
+            z-index: -1;
+        }
+        .container {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 50px;
+            background-color: #f7f7f7;
+            border: 1px solid #B2B2B2;
+            border-radius: 8px;
+            border-bottom: 8px solid #33CC33;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 120px;
+        }
+
+        .title {
+            font-size: 28px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .location {
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .store-hours {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .store-hours-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .store-hours-day {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .store-hours-time {
+            color: #555;
+        }
+
+        .delivery-block {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .delivery-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .delivery-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .delivery-logo {
+            margin: 0 10px;
+            width: 60px;
+            transition: transform 0.2s;
+        }
+
+        .delivery-logo:hover {
+            transform: scale(1.1);
+        }
+
+        .dot-pattern {
+            position: absolute;
+            z-index: -1;
+            height: var(--dot-height);
+            width: var(--dot-width);
+            background-image: radial-gradient(var(--dot-color) 20%, transparent 20%);
+            background-position: 0 0, 50px 50px;
+            background-size: 15px 15px;
+        }
+
+        .dot-pattern.top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .dot-pattern.top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .dot-pattern.bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+
+        .dot-color-yellow {
+            --dot-color: #FCC53A;
+        }
+
+        .dot-color-blue {
+            --dot-color: #3399FF;
+        }
+
+        .dot-color-green {
+            --dot-color: #33CC33;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="firm.png" alt="Ariyana Middle Eastern Food Logo">
+        <h1 class="title">Ariyana Middle Eastern Food</h1>
+        <p class="location">Peterborough, Ontario, Canada</p>
+        <div class="store-hours">
+            <div class="store-hours-title">Store Hours</div>
+            <div class="store-hours-day">
+                <span>Monday - Friday:</span>
+                <span class="store-hours-time">11:00 AM - 10:00 PM</span>
+            </div>
+            
+            <div class="store-hours-day">
+                <span>Saturday - Sunday:</span>
+                <span class="store-hours-time">12:00 PM - 9:00 PM</span>
+            </div>
+        </div>
+        <div class="delivery-block">
+            <div class="delivery-title">Delivery Partners</div>
+            <div class="delivery-logos">
+                <img class="delivery-logo" src="skip.png" alt="Skip Logo">
+                <img class="delivery-logo" src="doordash.png" alt="DoorDash Logo">
+                <img class="delivery-logo" src="uber.png" alt="Uber Eats Logo">
+            </div>
+        </div>
+        <p class="location" style= "margin-top: 10px; font-size: 10px;">*Contactless Delivery*</p>
+    </div>
+    <div class="dot-pattern top-left dot-color-yellow" style="--dot-height: 200px; --dot-width: 120px;"></div>
+        <div class="dot-pattern top-right dot-color-blue" style="--dot-height: 120px; --dot-width: 120px;"></div>
+        <div class="dot-pattern bottom-right dot-color-green" style="--dot-height: 120px; --dot-width: 400px;"></div>
+    
+</body>
+</html>
